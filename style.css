@@ -1,0 +1,169 @@
+* {box-sizing: border-box;
+}
+
+
+
+body{ 
+
+background-image: linear-gradient(to right, magenta, lightgreen);
+}
+
+
+
+.container{
+					display: grid;
+					grid-template-columns: auto auto  auto auto;
+					text-align: center;
+					margin-top: 50px;
+					background-color: rgba( 255, 255, 255, 0.7);
+					margin: 0 auto;
+					border: 1px solid black;
+					width: 20%;
+					padding: 10px;
+					height: auto;
+					font-size: 20px;
+					
+					
+}
+
+
+
+.item {
+			border: 1px solid white;
+			padding: 10px;
+			text-align: center;
+			
+}
+
+.item:hover{
+					background-color: #6ae0ff;
+}
+
+.item1{
+background-image: linear-gradient(white, grey);
+grid-area: result;
+padding: 20px;
+border: 2px solid black;
+overflow: hidden;
+}
+
+
+
+
+
+
+.item2{
+					grid-area : ac;
+}
+
+
+.item3{
+					grid-area : del;
+}
+
+
+.item4{
+					grid-area : div ;
+}
+
+
+.item5{
+					grid-area : one;
+}
+
+
+.item6{
+					grid-area : two;
+}
+
+
+.item7{
+					grid-area : three;
+}
+
+
+.item8{
+					grid-area : mul;
+}
+
+
+.item9{
+					grid-area : four;
+}
+
+
+.item10{
+					grid-area : five;
+}
+
+
+.item11{
+					grid-area : six;
+}
+
+
+.item12{
+					grid-area : add;
+}
+
+.item13{
+					grid-area : seven;
+}
+
+
+.item14{
+					grid-area : eight;
+}
+
+
+
+.item15{
+					grid-area : nine;
+}
+
+
+.item16{
+					grid-area : sub;
+}
+
+
+
+.item17{
+					grid-area : dot;
+}
+
+
+
+.item18{
+					grid-area : zero;
+}
+
+
+.item19{
+					grid-area : equ;
+}
+
+
+
+.container { 
+					grid-template-areas: 'result result result result'
+
+'ac ac del div'
+
+'one two three mul'
+'four five six add'
+'seven eight nine sub'
+'dot zero equ equ'
+
+}
+
+
+@media only screen and (max-width: 800px){
+.container {
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	font-size: 20px;
+
+}
